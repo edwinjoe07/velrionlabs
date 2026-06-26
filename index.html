@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velrionlabs - Create winning ads with AI. Use our library of 1,000+ Captivating AI Actors, or create your own AI Avatar.">
+  <title>Velrionlabs - Create winning ads with AI</title>
+  
+  <!-- Premium Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animated Glows -->
+  <div class="bg-glows" aria-hidden="true">
+    <div class="glow-blob glow-orange"></div>
+    <div class="glow-blob glow-blue"></div>
+    <div class="glow-blob glow-pink"></div>
+  </div>
+
+  <!-- Outer Application Container -->
+  <div class="app-container">
+    
+    <!-- Premium Header -->
+    <header>
+      <a href="#" class="logo" id="logo-brand">
+        <!-- Sleek Geometric V/L Interlocking SVG Icon -->
+        <svg class="logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 2L10 22L13 22L7 2H4Z" />
+          <path d="M11.5 8L15.5 22L18.5 22L13.5 4.5L11.5 8Z" />
+          <path d="M16 14L18 22H20.5L18 14H16Z" />
+        </svg>
+        <span>velrionlabs</span>
+      </a>
+    </header>
+
+    <!-- Main Hero and Interactive Grid Section -->
+    <main>
+      <!-- Central Hero Content -->
+      <section class="hero-content" id="hero-sec">
+        <!-- <div class="live-badge" id="live-badge-notification">
+          <span class="badge-italic">Seedance 2.0</span> is live
+        </div> -->
+        
+        <h1 class="hero-title" id="hero-main-heading">
+          Create winning ads <br><span class="serif-italic">with AI</span>
+        </h1>
+        
+        <p class="hero-subtitle" id="hero-sub-paragraph">
+          Use our library of 1,000+ Captivating AI Actors, or create your own AI Avatar
+        </p>
+        
+        <!-- <div class="cta-container">
+          <a href="#" class="primary-button" id="cta-login-signup">
+            Login or Sign up
+          </a>
+        </div> -->
+      </section>
+
+      <!-- Floating ad-cards (GSAP animated) -->
+      <div class="floating-cards-container" id="cards-container">
+        
+        <!-- Card 1: Left Top -->
+        <div class="ad-card" id="card-1">
+          <div class="card-image-wrapper">
+            <video src="assets/nike_ugc.mp4" loop muted playsinline autoplay preload="auto"></video>
+            <div class="card-vignette"></div>
+          </div>
+        </div>
+
+        <!-- Card 2: Center Top (Cropped) -->
+        <div class="ad-card" id="card-2">
+          <div class="card-image-wrapper">
+            <video src="assets/final_meminho.mp4" loop muted playsinline autoplay preload="auto"></video>
+            <div class="card-vignette"></div>
+          </div>
+        </div>
+
+        <!-- Card 3: Right Top -->
+        <div class="ad-card" id="card-3">
+          <div class="card-image-wrapper">
+            <video src="assets/km.mp4" loop muted playsinline autoplay preload="auto"></video>
+            <div class="card-vignette"></div>
+          </div>
+        </div>
+
+        <!-- Card 4: Left Bottom -->
+        <div class="ad-card" id="card-4">
+          <div class="card-image-wrapper">
+            <video src="assets/skate_tshirt.mp4" loop muted playsinline autoplay preload="auto"></video>
+            <div class="card-vignette"></div>
+          </div>
+        </div>
+
+        <!-- Card 5: Center Bottom (Cropped) -->
+        <div class="ad-card" id="card-5">
+          <div class="card-image-wrapper">
+            <video src="assets/tshirt%20ad.mp4" loop muted playsinline autoplay preload="auto"></video>
+            <div class="card-vignette"></div>
+          </div>
+        </div>
+
+        <!-- Card 6: Right Bottom -->
+        <div class="ad-card" id="card-6">
+          <div class="card-image-wrapper">
+            <video src="assets/tshirt1_ugc.mp4" loop muted playsinline autoplay preload="auto"></video>
+            <div class="card-vignette"></div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- GSAP Core Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- Main JS file containing GSAP drift animations -->
+  <script src="main.js"></script>
+</body>
+</html>
