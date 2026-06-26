@@ -224,4 +224,28 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // --- 4. Mobile Audio Toggle Functionality ---
+  const audioButtons = document.querySelectorAll('.audio-toggle-btn');
+  audioButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent triggering card interactions or GSAP resets
+      const card = btn.closest('.ad-card');
+      const video = card.querySelector('video');
+      if (video) {
+        video.muted = !video.muted;
+        
+        const mutedIcon = btn.querySelector('.audio-muted-icon');
+        const playingIcon = btn.querySelector('.audio-playing-icon');
+        
+        if (video.muted) {
+          mutedIcon.style.display = 'block';
+          playingIcon.style.display = 'none';
+        } else {
+          mutedIcon.style.display = 'none';
+          playingIcon.style.display = 'block';
+        }
+      }
+    });
+  });
 });
